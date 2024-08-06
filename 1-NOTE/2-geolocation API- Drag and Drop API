@@ -60,4 +60,3 @@ id = navigator.geolocation.watchPosition(success, error, options);
 //used to make responsive div,span and paragraphs dragrabble.
 //eg:drag items to cart
 
-
