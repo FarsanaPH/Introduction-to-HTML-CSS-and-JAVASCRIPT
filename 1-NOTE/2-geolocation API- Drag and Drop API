@@ -1,0 +1,63 @@
+//Geolocation API
+//Get current location of a user(food order)
+//navigator.geolocation.getCurrentPosition(displayPosition)
+const options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0,
+  };
+  
+  function success(pos) {
+    const crd = pos.coords;
+  
+    console.log("Your current position is:");
+    console.log(`Latitude : ${crd.latitude}`);
+    console.log(`Longitude: ${crd.longitude}`);
+    console.log(`More or less ${crd.accuracy} meters.`);
+  }
+  
+  function error(err) {
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+  }
+  
+  navigator.geolocation.getCurrentPosition(success, error, options);
+----------------------------------------------------------------------------------
+
+//moving location of a user
+//navigator.geolocation.watchPosition(displayPosition)
+let id;
+let target;
+let options;
+
+function success(pos) {
+  const crd = pos.coords;
+
+  if (target.latitude === crd.latitude && target.longitude === crd.longitude) {
+    console.log("Congratulations, you reached the target");
+    navigator.geolocation.clearWatch(id);
+  }
+}
+
+function error(err) {
+  console.error(`ERROR(${err.code}): ${err.message}`);
+}
+
+target = {
+  latitude: 0,
+  longitude: 0,
+};
+
+options = {
+  enableHighAccuracy: false,
+  timeout: 5000,
+  maximumAge: 0,
+};
+
+id = navigator.geolocation.watchPosition(success, error, options);
+
+-------------------------------------------------------------------------------------------
+//DRAG AND DROP API 
+//used to make responsive div,span and paragraphs dragrabble.
+//eg:drag items to cart
+
+
