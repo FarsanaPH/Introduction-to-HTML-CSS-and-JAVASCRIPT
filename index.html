@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="info_container">
+         <p class="name"> Farsana P Hamza </p>
+         <a href="mailto:farsanaph2001@gmail.com" target="_blank" ><i class="fas fa-envelope fa-sm"></i>&nbsp;farsana@gmail.com</a><br>
+         <a href="" target="_blank" ><i class="fas fa-phone fa-sm"></i>&nbsp;9876567645</a><br>
+        </div>
+ 
+         <nav class="topmenu">
+             <a href="#about">About Me</a>
+             <a href="#skills">Skills</a>
+             <a href="#projects">Projects</a>
+             <a href="#recommendations">Recommendations</a>
+         </nav>
+ </header>
+ 
+<section id="home">
+</section>
+
+<section id="about">
+        <img src="./images/profile.jfif" alt="Profile Image">
+   
+    <div class="intro">
+        <h1>Hi, I am Farsana!</h1>
+        <p>I am a MCA graduate with 1 year of experience in MEARN Stack development.Currently, I am exploring the world of web development with a strong passion for coding. My ultimate goal is to continuously grow as a developer and contribute to exciting and meaningful projects.</p>
+    </div>
+</section><hr>
+
+<section id="skills">
+    <h1 class="caption">Skills</h1>
+   <ul>
+    <li>
+        <img src="./images/html.png" alt="html icon">
+        <h3>HTML</h3>
+    </li>
+    <li>
+        <img src="./images/css.png" alt="css icon">
+        <h3>CSS</h3>
+    </li>
+    <li>
+        <img src="./images/js.png" alt="js icon">
+        <h3>JAVASCRIPT</h3>
+    </li>
+    <li>
+        <img src="./images/react.png" alt="react icon">
+        <h3>REACT</h3>
+    </li>
+    <li>
+        <img src="./images/angular.png" alt="angular icon">
+        <h3>ANGULAR</h3>
+    </li>
+    <li>
+        <img src="./images/ndjs.png" alt="nodejs icon">
+        <h3>NODE JS</h3>
+    </li>
+   </ul>
+</section><hr>
+
+
+<section id="projects">
+    <h1 class="caption">Projects</h1>
+    <div class="project-card">
+        <dt>Maternal Care Hub</dt>
+        <dd>Developed a website for maternal women to enjoy maternal services in the comfort of their homes with integrating features like location-based search, chatbox, attendance marking, webinars and blogs.  </dd>
+    </div>
+    <div class="project-card">
+        <dt>E-commerce Website</dt>
+        <dd>Developed a styled multi-page e-commerce website in the context of empowering rural women where they can showcase and sell their handmade products.</dd>
+    </div>
+    <div class="project-card">
+        <dt>Weather App</dt>
+        <dd>Created a weather app to show climatic condition, temperature, humidity and wind of a particular place with the help of API integration.</dd>
+    </div>
+    <div class="project-card">       
+        <dt>ToDo List App</dt>
+        <dd>Developed a ToDo list app with integrating features like filtering,deletion and addition of ToDo items.</dd> 
+    </div>
+</section>
+
+
+<section id="recommendations">
+    <h1 class="caption">Recommendations</h1>
+    <ul id="recommendation-list">
+        <li class="recommendation"><strong>Deepa</strong><br><br> "Farsana has demonstrated exceptional skills in web development. Her attention to detail and problem-solving abilities are commendable.She consistently delivers high-quality work and goes above and beyond to meet project requirements. Her positive attitude makes her a pleasure to work with. I highly recommend her for any team."</li>
+        <li class="recommendation"><strong>Anonymous</strong><br><br> "I highly recommend Farsana for her dedication and expertise in the MERN stack. She is a quick learner and a valuable team player. Her innovative approach to problem-solving has greatly contributed to the success of our projects. Her enthusiasm and commitment are unparalleled, making her an exceptional asset."</li>
+        <li class="recommendation"><strong>Hari</strong><br><br> "Working with Farsana was a pleasure. Her innovative ideas and technical proficiency made a significant impact on our projects. She has a deep understanding of web technologies and always strives to improve her skills. Her ability to collaborate effectively with team members is impressive, fostering a productive and positive work environment."</li>
+    </ul>
+  
+    <form id="recommendation-form">
+        <h1>Leave a Recommendation</h1>
+        <input type="text" id="name_input" placeholder="Name(optional)"><br>
+        <textarea type="text" id="new_recommendation" placeholder="Message" rows="10"></textarea>
+        <button type="button" id="recommend_btn">Submit</button>
+    </form>  
+
+    <div id="popup" class="popup">This will not show as display:none in style.we can check the position by making display:block and adding icon tag and thanks for recommendation here</div>
+    <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+    </a> 
+</section>
+
+  <footer>
+    <p>&copy;2024 | Farsana P Hamza</p>
+  </footer>
+
+
+
+<script src="./app.js"></script>
+</body>
+</html>
