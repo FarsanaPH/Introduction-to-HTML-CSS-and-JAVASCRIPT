@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.info_container{
+    margin: 12px;
+}
+.name {
+    font-size: 25px;
+    margin: 0;
+    
+}
+
+.info_container a{
+    color:white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.topmenu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.topmenu a:hover {
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+section {
+    padding:3px 50px;
+    margin-bottom: 90px;
+  
+}
+
+#about{
+    display:flex;
+    margin: 200px 0 70px 0;
+}
+#about img {
+    width: 30%;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 70px;
+}
+
+.intro{
+    width:63.5%;
+   
+}
+
+.intro h1{
+    color: brown;
+    font-size: 50px; 
+    margin: 0;
+} 
+
+.intro p{
+    font-size: 29px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+hr{
+    width: 50%;
+}
+
+.caption{
+    margin: 0 0 60px 0;
+    font-size: 45px;
+    color: brown;
+}
+
+#skills ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    text-decoration: none;
+
+}
+
+#skills li {
+   margin-right: 90px;
+   list-style-type: none;
+   border-radius: 5px;
+   border: 2px gray solid;
+   box-shadow: 2px 4px 4px black;
+   width: 25%;
+
+}
+
+#skills li img {
+    width: 100%;
+    height: 100px;
+    margin-right: 10px;
+}
+#skills li h3{
+    text-align: center;
+    margin:0;
+}
+
+.project-card {
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 4px;
+    /* background-color: #fffacd; */
+     background-color: #f9f9f9;
+    
+    
+}
+
+.project-card dt{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.project-card dd::before {
+    content: "•";
+    left: 10px;
+    color: #333;
+    font-size: 20px;
+    line-height: 1;
+}
+
+#recommendation-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0 30px;
+    gap:45px
+}
+
+.recommendation {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    font-style: italic;
+    font-size: 20px;
+    width: calc(30% - 20px);
+    box-sizing: border-box;
+    background-color:grey;
+    color: white;
+    
+}
+
+#recommendation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+#recommendation-form input,
+#recommendation-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #F2F1F0;
+}
+
+#recommendation-form button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color:black;
+    color: whitesmoke;
+    transition: transform 0.3s ease;
+}
+#recommendation-form button:hover{
+    transform: scale(1.1);
+}
+
+ .popup {
+    display: none;
+    position: fixed;
+    width:370px;
+    height:150px;
+    top:35%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 50px;
+    transform: translateX(-50%);
+    background-color:green;
+    color: white;
+    border-radius: 10px;
+    z-index: 1000;
+} 
+
+.checkmark {
+    font-size: 50px; 
+    color: white; 
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+
+a svg {
+    display:block; 
+    background-color: black;
+    border-radius: 50%;
+    float:right;
+    transition: transform 0.3s ease;   
+}
+a svg:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:8px;
+    width:100%;
+    height:70px
+}
